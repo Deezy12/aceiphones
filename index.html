@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ace iPhones</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background: url('/api/placeholder/1920/600') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      padding: 150px 0;
+      text-align: center;
+    }
+    .why-choose-us {
+      background: #f8f9fa;
+      padding: 60px 0;
+    }
+    .testimonials {
+      padding: 60px 0;
+    }
+    .contact {
+      background: #f8f9fa;
+      padding: 60px 0;
+    }
+    
+    /* Repair services styles */
+    .repair-services {
+      padding: 60px 0;
+    }
+    .repair-card {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .repair-card img {
+      width: 100%;
+      height: auto;
+    }
+    .repair-card h5 {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .repair-card p {
+      color: #777;
+      margin-bottom: 0;
+    }
+    
+    /* Testimonial balloon styles */
+    .testimonial-container {
+      overflow: hidden;
+    }
+    .testimonial-balloon {
+      position: absolute;
+      background-color: #f8f9fa;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      max-width: 300px;
+    }
+    .testimonial-balloon::before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 20px;
+      border-width: 10px 10px 0;
+      border-style: solid;
+      border-color: #f8f9fa transparent;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ace iPhones</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-choose-us">Why Choose Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Professional Repair Services</h1>
+      <p>Fast and reliable repairs for your devices.</p>
+      <a href="#contact" class="btn btn-primary">Get an Instant Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="repair-services">
+    <div class="container">
+      <h2 class="text-center mb-3">Repair Services</h2>
+      <h4 class="text-center mb-5">What Do You Need Repaired?</h4>
+      <div class="row">
+        <!-- Apple iPhone Repair -->
+        <div class="col-md-4">
+          <div class="repair-card">
+            <img src="/api/placeholder/400/250" alt="Apple iPhone Repair">
+            <h5>Apple iPhone Repair</h5>
+            <p>iPhone</p>
+          </div>
+        </div>
+        <!-- Samsung Phone Repair -->
+        <div class="col-md-4">
+          <div class="repair-card">
+            <img src="/api/placeholder/400/250" alt="Samsung Phone Repair">
+            <h5>Samsung Phone Repair</h5>
+            <p>Android Phone</p>
+          </div>
+        </div>
+        <!-- Apple iPad and Other Tablet Repair -->
+        <div class="col-md-4">
+          <div class="repair-card">
+            <img src="/api/placeholder/400/250" alt="Apple iPad and Other Tablet Repair">
+            <h5>Apple iPad and Other Tablet Repair</h5>
+            <p>Tablet</p>
+          </div>
+        </div>
+        <!-- Computer Repair -->
+        <div class="col-md-4">
+          <div class="repair-card">
+            <img src="/api/placeholder/400/250" alt="Computer Repair">
+            <h5>Computer Repair</h5>
+            <p>Computer</p>
+          </div>
+        </div>
+        <!-- Apple Watch Repair -->
+        <div class="col-md-4">
+          <div class="repair-card">
+            <img src="/api/placeholder/400/250" alt="Apple Watch Repair">
+            <h5>Apple Watch Repair</h5>
+            <p>Apple Watch</p>
+          </div>
+        </div>
+        <!-- Game Console Repair -->
+        <div class="col-md-4">
+          <div class="repair-card">
+            <img src="/api/placeholder/400/250" alt="Game Console Repair">
+            <h5>Game Console Repair</h5>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us" class="why-choose-us">
+    <div class="container">
+      <h2 class="text-center mb-5">Why Choose Us</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="bi bi-speedometer2" style="font-size: 2rem;"></i>
+          <h5 class="mt-3">Fast Service</h5>
+          <p>Quick turnaround time on all repairs.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-check2-circle" style="font-size: 2rem;"></i>
+          <h5 class="mt-3">Quality Parts</h5>
+          <p>We use only the best parts for reliable repairs.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-shield-check" style="font-size: 2rem;"></i>
+          <h5 class="mt-3">Guaranteed Repairs</h5>
+          <p>Our repairs come with a warranty for your peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="text-center mb-5">Testimonials</h2>
+      <div class="testimonial-container position-relative" style="min-height: 450px;">
+        <!-- Testimonials will appear here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Repair Service. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Testimonial Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const testimonials = [
+        { text: "Great service and very professional. My phone is working like new again!", author: "Jane Doe" },
+        { text: "Fast, efficient, and affordable repair. Highly recommend their services.", author: "John Smith" },
+        { text: "They fixed my tablet when no one else could. Absolutely fantastic service!", author: "Michael Johnson" },
+        { text: "Very knowledgeable staff and reasonable prices. Will definitely return!", author: "Sarah Williams" },
+        { text: "The repair was completed much faster than I expected. Great job!", author: "Robert Brown" },
+        { text: "Excellent customer service. They explained everything clearly before starting the repair.", author: "Emily Davis" },
+        { text: "My old phone works better than when it was new. These guys are magicians!", author: "David Wilson" },
+        { text: "Honest pricing and quality work. No surprises or hidden fees.", author: "Lisa Taylor" },
+        { text: "They saved all my data after my phone crashed. Forever grateful!", author: "Thomas Anderson" },
+        { text: "Been to 3 other repair shops before finding this one. Should have come here first!", author: "Jennifer Martinez" }
+      ];
+      
+      const container = document.querySelector('.testimonial-container');
+      const containerWidth = container.offsetWidth;
+      const containerHeight = 450; // Increased height for more testimonials
+      const balloonWidth = 250; // Standard width for positioning calculations
+      const balloonHeight = 120; // Approximate height for positioning
+      
+      // Track occupied spaces to prevent overlap
+      const grid = [];
+      const gridRows = 3;
+      const gridCols = 3;
+      const cellWidth = containerWidth / gridCols;
+      const cellHeight = containerHeight / gridRows;
+      
+      // Initialize grid with all cells as available
+      for (let row = 0; row < gridRows; row++) {
+        grid[row] = [];
+        for (let col = 0; col < gridCols; col++) {
+          grid[row][col] = false; // false means not occupied
+        }
+      }
+      
+      function findAvailableCell() {
+        // Find all empty cells
+        const availableCells = [];
+        for (let row = 0; row < gridRows; row++) {
+          for (let col = 0; col < gridCols; col++) {
+            if (!grid[row][col]) {
+              availableCells.push({ row, col });
+            }
+          }
+        }
+        
+        // Return a random available cell or null if none
+        if (availableCells.length === 0) return null;
+        return availableCells[Math.floor(Math.random() * availableCells.length)];
+      }
+      
+      function createTestimonial() {
+        // Check if we're at the maximum (5-6 testimonials)
+        const currentCount = document.querySelectorAll('.testimonial-balloon').length;
+        if (currentCount >= 6) return;
+        
+        // Find an available cell
+        const cell = findAvailableCell();
+        if (!cell) return; // No available space
+        
+        // Mark cell as occupied
+        grid[cell.row][cell.col] = true;
+        
+        const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
+        const element = document.createElement('div');
+        element.className = 'testimonial-balloon';
+        
+        // Position based on grid cell (with some random variation within the cell)
+        const left = (cell.col * cellWidth) + Math.random() * (cellWidth - balloonWidth - 20) + 10;
+        const top = (cell.row * cellHeight) + Math.random() * (cellHeight - balloonHeight - 20) + 10;
+        
+        element.style.left = `${left}px`;
+        element.style.top = `${top}px`;
+        element.style.width = `${balloonWidth}px`;
+        
+        // Add a data attribute to track grid position
+        element.dataset.row = cell.row;
+        element.dataset.col = cell.col;
+        
+        element.innerHTML = `
+          <p class="m-0">"${testimonial.text}"</p>
+          <footer class="blockquote-footer mt-2">${testimonial.author}</footer>
+        `;
+        
+        container.appendChild(element);
+        
+        // Fade in
+        setTimeout(() => {
+          element.style.opacity = 1;
+        }, 100);
+        
+        // Fade out and remove after random time
+        const displayTime = Math.random() * 4000 + 6000; // 6-10 seconds
+        setTimeout(() => {
+          element.style.opacity = 0;
+          setTimeout(() => {
+            // Free up the grid cell when removing
+            const row = parseInt(element.dataset.row);
+            const col = parseInt(element.dataset.col);
+            grid[row][col] = false;
+            
+            element.remove();
+            
+            // Create a new testimonial after this one fades
+            setTimeout(createTestimonial, Math.random() * 1000 + 500);
+          }, 1000);
+        }, displayTime);
+      }
+      
+      // Create initial batch of testimonials with slight delays
+      for (let i = 0; i < 6; i++) {
+        setTimeout(() => {
+          createTestimonial();
+        }, i * 800); // Stagger creation by 800ms each
+      }
+      
+      // Check regularly if we need to add more to maintain 5-6 testimonials
+      setInterval(() => {
+        const currentCount = document.querySelectorAll('.testimonial-balloon').length;
+        if (currentCount < 5) {
+          createTestimonial();
+        }
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
